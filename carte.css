@@ -1,0 +1,41 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(112, 112, 93);
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: yellowgreen;
+}
+
+.container .card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid #fff;
+    border-top: 20px solid #fff3;
+}
+
+.container .card .icon{
+    margin-top:10px;
+}
+.container .card .icon img {
+    max-width: 90px;
+}
+.container .card .content{
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+
+.container .card .content h3{
+    color: #fff;
+    
+}
